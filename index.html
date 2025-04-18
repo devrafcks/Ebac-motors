@@ -1,46 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EBAC Motors</title>
-    <link rel="preconnect" href="http://fonts.googleapis.com">
-    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./main.css">
 </head>
 
 <body>
     <header>
-        <div class="container">
+        <div class="container container-flex">
             <h1>EBAC Motors</h1>
             <div class="menu-hamburguer">
-                <div class="linha"></div>
-                <div class="linha"></div>
-                <div class="linha"></div>
+                <span class="linha"></span>
+                <span class="linha"></span>
+                <span class="linha"></span>
             </div>
         </div>
         <nav>
             <div class="container">
                 <ul>
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Em destaque</a>
-                    </li>
-                    <li>
-                        <a href="#">Promoções</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#destaque">Em destaque</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Contato</a></li>
                 </ul>
             </div>
         </nav>
     </header>
-</body>
 
+    <main>
+        <div class="images-carousel">
+            <img src="./images/slide1.png" alt="Carro 1">
+            <img src="./images/slide2.png" alt="Carro 2">
+            <img src="./images/slide3.png" alt="Carro 3">
+        </div>
+
+        <section id="sobre">
+            <div class="container container-flex">
+                <img src="./images/loja.jpg" alt="Loja" class="imagem-loja">
+                <div>
+                    <h2>Sobre nós</h2>
+                    <p>Somos uma concessionária de veículos com mais de 20 anos de experiência no mercado. Oferecemos os melhores preços e condições para você sair dirigindo o seu carro novo.</p>
+                    <p>Venha nos visitar e confira nossas ofertas!</p>
+                </div>
+            </div>
+        </section>
+        <section id="destaque">
+            <div class="container">
+                <h2>Em destaque</h2>
+                <ul class="container-flex">
+                    <li class="card-veiculo">
+                        <img src="./images/carro-bmw.png" alt="BMW Série 3">
+                        <h3>BMW Série 3</h3>
+                        <p>O BMW Série 3 une luxo, performance e tecnologia em um sedã sofisticado. Ideal para quem busca conforto e dirigibilidade premium.</p>
+                        <strong>R$ 75.000</strong>
+                        <button>Tenho interesse</button>
+                    </li>
+                    <li class="card-veiculo">
+                        <img src="./images/moto-bmw.png" alt="BMW R 1250 GS">
+                        <h3>BMW R 1250 GS</h3>
+                        <p>A BMW R 1250 GS é uma moto aventureira, equipada com motor boxer potente, conforto para longas viagens e tecnologia de ponta para qualquer terreno.</p>
+                        <strong>R$ 92.000</strong>
+                        <button>Tenho interesse</button>
+                    </li>
+                    
+                    <li class="card-veiculo">
+                        <img src="./images/fusca.png" alt="Volkswagen Fusca">
+                        <h3>Volkswagen Fusca</h3>
+                        <p>O clássico Volkswagen Fusca é um ícone da história automotiva. Compacto, econômico e cheio de personalidade, ideal para colecionadores ou amantes do retrô.</p>
+                        <strong>R$ 28.000</strong>
+                        <button>Tenho interesse</button>
+                    </li>
+                    
+                </ul>
+            </div>
+        </section>        
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./script.js"></script>
+</body>
 </html>
